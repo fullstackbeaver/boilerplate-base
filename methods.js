@@ -57,8 +57,14 @@ function getCurrentFolder() {
   return process.cwd().split(splitter).pop();
 }
 
-function getFoldersList(){
-  const source = "./templates"
+/**
+ * [getFoldersList description]
+ *
+ * @param   {String}  [source]  le chemin du dossier à afficher. Par défaut  "./templates"
+ *
+ * @return  {Array.<String>}          la liste des dossiers
+ */
+function getFoldersList(source= "./templates"){
   const files  = fs.readdirSync(source);
   return files.filter(file=>{
     return fs.lstatSync(path.join(source, file)).isDirectory() ? file: false;
