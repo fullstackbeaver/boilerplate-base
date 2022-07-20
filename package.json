@@ -1,0 +1,12 @@
+{
+  "name": "boilerplate-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "methods.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Full Stack Beaver",
+  "license": "ISC"
+}
